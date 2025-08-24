@@ -1,0 +1,507 @@
+/*
+Items Name : Fofana.
+Author : Ngetemplates
+/* --------------------------------
+Table of Contents
+- Import fonts
+- General
+- Loader
+- Button
+- Navbar
+- Intro
+- Features
+- Services
+- Portfolio
+- Pricing
+- Testimonial
+- Contact
+- Responsive
+-------------------------------- */
+/* ------------------------------
+  Import Google Web Font
+---------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* ------------------------------
+  General
+---------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+  color: #676576;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #333333;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 66px;
+  font-weight: 700;
+  left: -4px;
+  position: relative;
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 46px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #464646;
+}
+
+a:hover {
+  color: #ff5252;
+}
+
+p {
+  margin: 5px 0;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+/* ------------------------------
+  loader
+---------------------------------*/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+.loader .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader .loading .aloader {
+  background: #ef3248;
+}
+
+/* ------------------------------
+  button
+---------------------------------*/
+.button {
+  padding: 12px 30px;
+  background: #ff5252;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 0;
+}
+
+.button:hover {
+  background: #333;
+}
+
+/* ------------------------------
+  navbar
+---------------------------------*/
+.navbar {
+  background: #fff8f8;
+  padding: 25px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar .navbar-brand span {
+  color: #ff5252;
+}
+.navbar .navbar-brand:hover {
+  color: #333333;
+}
+.navbar .navbar-toggler {
+  padding: 0;
+}
+.navbar .navbar-toggler i {
+  font-size: 32px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-collapse {
+  position: relative;
+  left: -8px;
+}
+.navbar .navbar-nav li {
+  padding: 0 10px;
+}
+.navbar .navbar-nav li a {
+  color: #333333;
+}
+.navbar .navbar-nav li a:hover {
+  color: #ff5252;
+}
+.navbar .navbar-nav li .button {
+  color: #fff;
+  margin-top: -3px;
+  display: inline-block;
+  margin-right: -15px;
+}
+.navbar .show .button {
+  margin-top: 20px !important;
+}
+
+.navbar-fixed {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0);
+}
+
+/* ------------------------------
+ 	section-title
+---------------------------------*/
+.title h5 {
+  color: #ff5252;
+  margin-bottom: 10px;
+}
+.title h2 {
+  margin-bottom: 50px;
+}
+
+/* ------------------------------
+  intro
+---------------------------------*/
+.intro {
+  background: #fff8f8;
+  padding: 60px 0 300px;
+}
+.intro h5 {
+  color: #ff5252;
+  margin-bottom: 20px;
+}
+.intro p {
+  margin: 30px 0;
+  margin-right: 20%;
+}
+.intro a {
+  font-size: 17px;
+  font-weight: 600;
+}
+.intro a i {
+  position: relative;
+  top: 4px;
+  font-size: 24px;
+  margin-left: 10px;
+}
+.intro ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.intro .content-image {
+  background: url(../img/bg-peoples.png) center no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+.intro .content-image img {
+  width: 80%;
+}
+
+/* ------------------------------
+  features
+---------------------------------*/
+.features {
+  margin-top: -180px;
+}
+.features .content {
+  border-radius: 15px;
+  padding: 50px 40px;
+  background: #333333;
+}
+.features .content .content-box {
+  position: relative;
+  margin: 5px 0;
+}
+.features .content .icon {
+  float: left;
+  margin-right: 20px;
+}
+.features .content .icon i {
+  color: #ff5252;
+  font-size: 80px;
+}
+.features .content .text {
+  color: #eee;
+  overflow: hidden;
+}
+.features .content .text h5 {
+  color: #ffffff;
+}
+
+/* ------------------------------
+  services
+---------------------------------*/
+.services {
+  padding: 120px 0 140px;
+}
+.services h2 {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.services i {
+  background: #ff5252;
+  color: #ffffff;
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  line-height: 58px;
+  font-size: 28px;
+}
+.services .content {
+  padding: 40px;
+}
+.services .content-center {
+  border-radius: 10px;
+  box-shadow: 0 5px 38px -6px rgba(0, 0, 0, 0.14);
+}
+
+/* ------------------------------
+  portfolio
+---------------------------------*/
+.portfolio {
+  background: #fff8f8;
+  padding: 120px 0 140px;
+}
+.portfolio h2 {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.portfolio img {
+  width: 100%;
+  border-radius: 15px;
+}
+.portfolio .text {
+  border-radius: 5px;
+  margin-left: 153px;
+  margin-right: 40px;
+  padding: 25px;
+  text-align: left;
+  top: -70px;
+  position: relative;
+  background: #fff;
+  margin-bottom: -40px;
+  box-shadow: 0 5px 38px -6px rgba(0, 0, 0, 0.14);
+}
+.portfolio .text h5 {
+  color: #ff5252;
+}
+
+/* ------------------------------
+  pricing
+---------------------------------*/
+.pricing {
+  padding: 120px 0 140px;
+}
+.pricing .shadow {
+  box-shadow: 0 5px 38px -6px rgba(0, 0, 0, 0.14);
+}
+.pricing .content {
+  padding: 35px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+.pricing .content h2 {
+  color: #ff5252;
+  margin-top: 23px;
+}
+.pricing .content .divider {
+  height: 1px;
+  width: 100%;
+  background: #ddd;
+  margin: 15px 0 30px;
+}
+.pricing .content li {
+  padding: 5px 0;
+}
+.pricing .content li i {
+  color: #ff5252;
+  margin-right: 10px;
+}
+.pricing .content .button {
+  margin-top: 30px;
+}
+.pricing .content-center {
+  color: #fff8f8;
+  background: #333333;
+}
+.pricing .content-center h5 {
+  color: #ffffff;
+}
+.pricing .content-center .divider {
+  background: #666;
+}
+.pricing .content-center .button:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* ------------------------------
+  testimonial
+---------------------------------*/
+.testimonial {
+  padding: 140px 0;
+  background: linear-gradient(rgba(5, 4, 4, 0.69), rgba(5, 4, 4, 0.74)), url(../img/testimonial.jpg);
+  background-attachment: scroll, scroll;
+  background-size: auto, auto;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff8f8;
+}
+.testimonial .content {
+  position: relative;
+  padding: 30px;
+  border-radius: 15px;
+  background: #fff;
+  color: #676576;
+}
+.testimonial .content h5 {
+  color: #333333;
+}
+.testimonial .icon {
+  float: left;
+  margin-right: 20px;
+}
+.testimonial .icon i {
+  color: #ff5252;
+  font-size: 80px;
+}
+.testimonial .text {
+  overflow: hidden;
+}
+.testimonial .text h5 {
+  color: #333333;
+}
+
+/* ------------------------------
+  contact
+---------------------------------*/
+.contact {
+  padding: 120px 0;
+}
+.contact h2 {
+  color: #ff5252;
+  margin-bottom: 30px;
+}
+.contact ul {
+  margin-top: 30px;
+}
+.contact ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.contact ul li i {
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  background: #333333;
+  color: #ffffff;
+  line-height: 35px;
+  border-radius: 50%;
+}
+.contact ul li i:hover {
+  background: #ff5252;
+}
+
+/* ------------------------------
+  responsive
+---------------------------------*/
+@media (max-width: 768px) {
+  .services .content {
+    padding: 20px;
+  }
+
+  .services h2,
+  .portfolio h2 {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .portfolio .text {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .intro .content-image img {
+    margin-top: 30px;
+  }
+  .services h2,
+  .portfolio h2 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .pricing .content-center {
+    margin: 30px 0;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 360px) {
+  .intro ul li {
+    margin-right: 10px;
+  }
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  h1 {
+    line-height: 55px;
+    font-size: 55px;
+  }
+}
