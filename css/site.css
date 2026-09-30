@@ -1,29 +1,16 @@
 :root {
-  --bg: #fbfaf7;
-  --bg-alt: #f2efe8;
+  --bg: #ffffff;
+  --bg-alt: #f7f7f8;
   --surface: #ffffff;
   --ink: #16181d;
   --muted: #5d6068;
-  --line: #e4e0d6;
+  --line: #e8e8ec;
   --accent: #d4531c;
   --accent-ink: #ffffff;
   --radius: 16px;
   --shadow: 0 1px 2px rgba(20, 20, 30, 0.05), 0 12px 32px -12px rgba(20, 20, 30, 0.18);
   --serif: "Fraunces", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1115;
-    --bg-alt: #151820;
-    --surface: #1a1e27;
-    --ink: #f1efe9;
-    --muted: #a3a6b0;
-    --line: #2a2f3a;
-    --accent: #ff7a3d;
-    --accent-ink: #14100c;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 36px -14px rgba(0, 0, 0, 0.6);
-  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -184,7 +171,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 .pill { display: inline-block; text-align: center; font-size: .7rem; font-weight: 700; padding: 3px 8px; border-radius: 99px; }
 .pill.ok { background: rgba(47, 178, 107, .18); color: #1f8a51; }
 .pill.no { background: rgba(212, 83, 28, .14); color: var(--accent); }
-@media (prefers-color-scheme: dark) { .pill.ok { color: #5fd69a; } .pill.no { background: rgba(255, 122, 61, .16); } }
 .flow { counter-reset: step; list-style: none; margin: 0; padding: 0; }
 .flow li { counter-increment: step; position: relative; padding: 0 0 18px 38px; }
 .flow li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-size: .78rem; font-weight: 700; display: grid; place-items: center; }
