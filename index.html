@@ -196,27 +196,24 @@
               <figure class="win">
                 <div class="win-bar"><i></i><i></i><i></i><span>Admin app</span></div>
                 <div class="win-body">
-                  <p class="win-title">Roles &amp; permissions</p>
-                  <table class="perm">
-                    <thead><tr><th></th><th>View</th><th>Enrol</th><th>Report</th><th>Configure</th></tr></thead>
-                    <tbody>
-                      <tr><th>Learner</th><td class="y">✓</td><td></td><td></td><td></td></tr>
-                      <tr><th>Manager</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td></td></tr>
-                      <tr><th>Administrator</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-                    </tbody>
-                  </table>
+                  <p class="win-title">Access: <code>admin</code> role</p>
+                  <ul class="access">
+                    <li><span class="pill ok">Can</span><div><b>See aggregate analytics</b><small>Completion, funnel, biggest drop-off</small></div></li>
+                    <li><span class="pill no">Cannot</span><div><b>Read raw xAPI statements</b><small>Or follow one learner mid-lesson</small></div></li>
+                    <li><span class="pill no">No role</span><div><b>403 on every admin call</b><small>Tested both ways: 200 and 403</small></div></li>
+                  </ul>
                 </div>
-                <figcaption>Admin surface: role-based access control defined in Auth0.</figcaption>
+                <figcaption>Admin surface: a separate app, gated by one Auth0 role, aggregates only.</figcaption>
               </figure>
 
               <figure class="win">
                 <div class="win-bar"><i></i><i></i><i></i><span>Access flow</span></div>
                 <div class="win-body">
                   <ol class="flow">
-                    <li><b>Sign in</b><small>Auth0 universal login</small></li>
-                    <li><b>Token issued</b><small>roles + scoped API audience</small></li>
-                    <li><b>App routes by role</b><small>learner or admin surface</small></li>
-                    <li><b>API call</b><small>permissions checked on the backend</small></li>
+                    <li><b>Sign in</b><small>Auth0 login, one client per app</small></li>
+                    <li><b>Token issued</b><small>RBAC adds <code>permissions: ["admin"]</code></small></li>
+                    <li><b>Gate on the API</b><small>200 with the role, 403 without</small></li>
+                    <li><b>Aggregates only</b><small>counts and funnels, never actor IDs</small></li>
                   </ol>
                 </div>
                 <figcaption>Two apps, two security postures, one identity provider.</figcaption>

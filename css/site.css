@@ -168,11 +168,14 @@ ul { list-style: none; margin: 0; padding: 0; }
 .lf-row em { font-style: normal; font-size: .8rem; font-weight: 600; grid-column: 2; grid-row: 1; }
 .bar { grid-column: 1 / -1; height: 6px; border-radius: 99px; background: var(--bg-alt); overflow: hidden; }
 .bar span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
-.perm { width: 100%; border-collapse: collapse; font-size: .8rem; }
-.perm th, .perm td { padding: 10px 3px; text-align: center; border-top: 1px solid var(--line); }
-.perm thead th { border-top: 0; color: var(--muted); font-weight: 600; font-size: .72rem; }
-.perm tbody th { text-align: left; font-weight: 600; }
-.perm td.y { color: var(--accent); font-weight: 700; }
+.win code, .flow code { font: 500 .85em ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--bg-alt); padding: 1px 6px; border-radius: 5px; }
+.access li { display: grid; grid-template-columns: 76px 1fr; gap: 12px; align-items: start; padding: 12px 0; border-top: 1px solid var(--line); }
+.access b { display: block; font-size: .88rem; }
+.access small { color: var(--muted); font-size: .76rem; }
+.pill { display: inline-block; text-align: center; font-size: .7rem; font-weight: 700; padding: 3px 8px; border-radius: 99px; }
+.pill.ok { background: rgba(47, 178, 107, .18); color: #1f8a51; }
+.pill.no { background: rgba(212, 83, 28, .14); color: var(--accent); }
+@media (prefers-color-scheme: dark) { .pill.ok { color: #5fd69a; } .pill.no { background: rgba(255, 122, 61, .16); } }
 .flow { counter-reset: step; list-style: none; margin: 0; padding: 0; }
 .flow li { counter-increment: step; position: relative; padding: 0 0 18px 38px; }
 .flow li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-size: .78rem; font-weight: 700; display: grid; place-items: center; }
@@ -226,8 +229,4 @@ ul { list-style: none; margin: 0; padding: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .js .reveal { opacity: 1; transform: none; }
-}
-@media (max-width: 520px) {
-  .perm { font-size: .74rem; }
-  .perm thead th { font-size: .66rem; }
 }
