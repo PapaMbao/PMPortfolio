@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/site.css?v=20260930" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -166,32 +166,26 @@
           <!-- LearnFlow mockups -->
           <div class="lf reveal">
             <header class="lf-head">
-              <h3>LearnFlow, illustrated</h3>
-              <p>Illustrative mockups with sample data — not real screenshots or customer information.</p>
+              <h3>LearnFlow, in the product</h3>
+              <p>Screens from the working app, shown with test data.</p>
             </header>
-            <div class="lf-grid">
-              <figure class="win">
-                <div class="win-bar"><i></i><i></i><i></i><span>Learner app</span></div>
-                <div class="win-body">
-                  <div class="phone">
-                    <div class="ph-top"><b>Good morning, Alex</b><span class="streak">🔥 7</span></div>
-                    <div class="cont">
-                      <small>CONTINUE LEARNING</small>
-                      <b>Workplace Safety Essentials</b>
-                      <span>Lesson 8 of 12 · 8 min left</span>
-                      <div class="cont-row"><div class="bar"><span style="width:68%"></span></div><i class="play" aria-hidden="true">▶</i></div>
-                    </div>
-                    <div class="ph-stats">
-                      <div><small>Today's goal</small><b class="blue">20 min</b></div>
-                      <div><small>Weekly streak</small><b class="amber">7 days</b><span class="pips"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
-                    </div>
-                    <ul class="chips ph-ach"><li>🏆 Safety Champion</li><li>✔ Quiz Master</li></ul>
-                    <nav class="tabs" aria-hidden="true"><b>Home</b><span>Play</span><span>Learn</span><span>Progress</span><span>You</span></nav>
-                  </div>
-                </div>
-                <figcaption>Learner surface: a mobile app with a streak, daily goal, games, and courses.</figcaption>
-              </figure>
 
+            <div class="shots">
+              <figure class="shot shot-wide">
+                <a href="img/learnflow-analytics.png" target="_blank" rel="noopener"><img src="img/learnflow-analytics.png" alt="LearnFlow admin course analytics: completion rate, quiz pass rate and a per-block reach chart, labelled as aggregated from the LRS" width="2880" height="1800" loading="lazy" /></a>
+                <figcaption><b>Admin analytics.</b> Completion, pass rate and where learners drop off, all aggregated. Raw statements stay in the LRS.</figcaption>
+              </figure>
+              <figure class="shot shot-phone">
+                <a href="img/learnflow-learner.png" target="_blank" rel="noopener"><div class="phone-frame"><img src="img/learnflow-learner.png" alt="LearnFlow learner app home screen with a start-here course card, a game and a bottom tab bar" width="1179" height="2556" loading="lazy" /></div></a>
+                <figcaption><b>Learner app.</b> Mobile-first: courses, games and progress in one place.</figcaption>
+              </figure>
+              <figure class="shot shot-editor">
+                <a href="img/learnflow-player.png" target="_blank" rel="noopener"><div class="crop"><img src="img/learnflow-player.png" alt="LearnFlow admin course editor with title, slug, card colour and a live learner preview" width="2880" height="3392" loading="lazy" /></div></a>
+                <figcaption><b>Course authoring.</b> Build a course from reusable blocks, with a live learner preview.</figcaption>
+              </figure>
+            </div>
+
+            <div class="lf-grid">
               <figure class="win">
                 <div class="win-bar"><i></i><i></i><i></i><span>Admin app</span></div>
                 <div class="win-body">
@@ -379,6 +373,6 @@
       </div>
     </footer>
 
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=20260930"></script>
   </body>
 </html>
