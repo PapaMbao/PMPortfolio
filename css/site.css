@@ -162,11 +162,12 @@ ul { list-style: none; margin: 0; padding: 0; }
 .shot img { display: block; width: 100%; height: auto; }
 .shot-wide img { aspect-ratio: 2880 / 1080; object-fit: cover; object-position: top; }
 .shot > a { display: block; }
-.shot-wide img, .crop, .phone-frame { border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); background: var(--surface); }
-.crop { overflow: hidden; aspect-ratio: 1814 / 1632; }
-.crop img { width: 158.7%; max-width: none; }
-.phone-frame { width: fit-content; margin: 0 auto; overflow: hidden; border: 6px solid #0f172a; border-radius: 36px; }
-.phone-frame img { width: auto; height: 500px; }
+.shot-wide img, .stage { border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); background: var(--surface); }
+.stage { height: 420px; overflow: hidden; }
+.stage-phone { display: flex; justify-content: center; align-items: flex-start; padding-top: 28px; background: var(--bg-alt); }
+.phone-frame { width: 236px; flex: none; overflow: hidden; border: 6px solid #0f172a; border-bottom: 0; border-radius: 36px 36px 0 0; -webkit-mask-image: linear-gradient(#000 82%, transparent); mask-image: linear-gradient(#000 82%, transparent); }
+.phone-frame img { width: 100%; height: auto; }
+.stage-editor img { width: 158.7%; max-width: none; }
 .shot figcaption { margin-top: 14px; color: var(--muted); font-size: .9rem; max-width: 60ch; }
 .shot figcaption b { color: var(--ink); font-weight: 600; }
 .shot-phone figcaption { text-align: center; margin-inline: auto; }
@@ -219,7 +220,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   .cards, .services { grid-template-columns: 1fr; }
   .values { grid-template-columns: repeat(2, 1fr); }
   .lf-grid, .shots { grid-template-columns: 1fr; }
-  .phone-frame img { height: 440px; }
+  .stage { height: 360px; }
   .eng-item, .timeline > li { grid-template-columns: 1fr; gap: 14px; }
   .section { padding: 76px 0; }
 }
@@ -238,4 +239,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .js .reveal { opacity: 1; transform: none; }
+}
+@media (max-width: 520px) {
+  .stage-editor { height: 300px; }
 }
